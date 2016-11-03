@@ -8,6 +8,7 @@ var rocket = $('#rocket');
 var rocket2 = $('#rocket2');
 var creditslink = $('.credits');
 var creditsdiv = $('.creditsdiv');
+var expandericon = $('#expander');
 
 
 reset.hide();
@@ -17,6 +18,9 @@ creditslink.on('click', showCredits);
 
 function showCredits () {
 creditsdiv.slideToggle();
+expandericon.toggleClass('fa-plus-circle');
+expandericon.toggleClass('fa-minus-circle');
+
 }
 
 function resetAnimation () {
